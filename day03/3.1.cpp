@@ -7,7 +7,7 @@ int get_num(const string &s, size_t &i) {
     ll res = 0;
     
     while (i < s.size() && isdigit(s[i])) {
-        res *= 10 + (s[i] - '0');
+        res = res * 10 + (s[i] - '0');
         i++;
     }
 
